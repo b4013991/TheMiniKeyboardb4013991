@@ -1,0 +1,9 @@
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\bin\Debug\TheMiniKeyboardb4013991.exe.config
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\bin\Debug\TheMiniKeyboardb4013991.exe
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\bin\Debug\TheMiniKeyboardb4013991.pdb
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\obj\Debug\TheMiniKeyboardb4013991.csprojResolveAssemblyReference.cache
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\obj\Debug\TheMiniKeyboardb4013991.Form1.resources
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\obj\Debug\TheMiniKeyboardb4013991.Properties.Resources.resources
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\obj\Debug\TheMiniKeyboardb4013991.csproj.GenerateResource.Cache
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\obj\Debug\TheMiniKeyboardb4013991.exe
+C:\Users\tommy\Documents\Visual Studio 2013\Projects\TheMiniKeyboardb4013991\TheMiniKeyboardb4013991\obj\Debug\TheMiniKeyboardb4013991.pdb
