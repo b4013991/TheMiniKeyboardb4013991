@@ -15,7 +15,7 @@ namespace TheMiniKeyboardb4013991
     {
 
         string WordBuilderTxt;
-        int Keystrokes = 1;
+        int Keystrokes = 0;
         bool FirstTime = true;
         int IntervalRequired = 500;
 
@@ -67,14 +67,11 @@ namespace TheMiniKeyboardb4013991
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Console.WriteLine(timer1.Interval.ToString());
-                rTxt_WorldBuilder.Clear();
              if (FirstTime == true)
             {
                 FirstTime = false;
                  timer1.Enabled = true;
                  Keystrokes++;
-                 Console.WriteLine("Timer Interval has started at 500");
                  rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
              }
              else if (timer1.Enabled == true)
@@ -83,14 +80,12 @@ namespace TheMiniKeyboardb4013991
                  rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
                  timer1.Enabled = false;
                  timer1.Enabled = true;
-                 Console.WriteLine("The Timer has been restarted");
              }
              else if (timer1.Enabled == false)
              {
                  Keystrokes = 1;
                  rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
                  timer1.Enabled = true;
-                 Console.WriteLine("Timer interval started again");
 
              }
             
@@ -99,8 +94,6 @@ namespace TheMiniKeyboardb4013991
             {
                 rTxt_WorldBuilder.Text = "p";
             }
-
-
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "q";
@@ -133,6 +126,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 9)
             {
                 rTxt_WorldBuilder.Text = "S";
+                Keystrokes = 0;
             }
 
         }
