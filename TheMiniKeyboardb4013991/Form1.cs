@@ -41,7 +41,7 @@ namespace TheMiniKeyboardb4013991
 
         private void button13_Click(object sender, EventArgs e)
         {
-            mainTxt.AppendText(Environment.NewLine);
+            mainTxt.AppendText(Environment.NewLine); // acts as an enter button for the main text box, starting a new line
         }
 
         private void Form1_Load(object sender, EventArgs e)
