@@ -671,6 +671,21 @@ namespace TheMiniKeyboardb4013991
                Environment.Exit(0);
            }
 
+           private void setIntervalToolStripMenuItem_Click(object sender, EventArgs e)
+           {
+              IntervalRequired = 500;
+           }
+
+           private void interval10001sToolStripMenuItem_Click(object sender, EventArgs e)
+           {
+               IntervalRequired = 1000;
+           }
+
+           private void interval20002sToolStripMenuItem_Click(object sender, EventArgs e)
+           {
+               IntervalRequired = 2000;
+           }
+
 
 
         }

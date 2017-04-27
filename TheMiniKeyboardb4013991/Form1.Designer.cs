@@ -71,6 +71,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.setIntervalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interval10001sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interval20002sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_SHU)).BeginInit();
@@ -488,17 +490,19 @@
             // configureToolStripMenuItem
             // 
             this.configureToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setIntervalToolStripMenuItem});
+            this.setIntervalToolStripMenuItem,
+            this.interval10001sToolStripMenuItem,
+            this.interval20002sToolStripMenuItem});
             this.configureToolStripMenuItem.Name = "configureToolStripMenuItem";
             this.configureToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.configureToolStripMenuItem.Text = "Configure";
             // 
             // setIntervalToolStripMenuItem
             // 
-            this.setIntervalToolStripMenuItem.Enabled = false;
             this.setIntervalToolStripMenuItem.Name = "setIntervalToolStripMenuItem";
-            this.setIntervalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.setIntervalToolStripMenuItem.Text = "Set Interval";
+            this.setIntervalToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.setIntervalToolStripMenuItem.Text = "Interval 500 (0.5s)";
+            this.setIntervalToolStripMenuItem.Click += new System.EventHandler(this.setIntervalToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
@@ -507,6 +511,20 @@
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            // 
+            // interval10001sToolStripMenuItem
+            // 
+            this.interval10001sToolStripMenuItem.Name = "interval10001sToolStripMenuItem";
+            this.interval10001sToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.interval10001sToolStripMenuItem.Text = "Interval 1000 (1s)";
+            this.interval10001sToolStripMenuItem.Click += new System.EventHandler(this.interval10001sToolStripMenuItem_Click);
+            // 
+            // interval20002sToolStripMenuItem
+            // 
+            this.interval20002sToolStripMenuItem.Name = "interval20002sToolStripMenuItem";
+            this.interval20002sToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.interval20002sToolStripMenuItem.Text = "Interval 2000 (2s)";
+            this.interval20002sToolStripMenuItem.Click += new System.EventHandler(this.interval20002sToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -585,6 +603,8 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setIntervalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem interval10001sToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem interval20002sToolStripMenuItem;
     }
 }
 
