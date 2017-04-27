@@ -49,13 +49,13 @@ namespace TheMiniKeyboardb4013991
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            rTxt_WorldBuilder.Text == ("P");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             int intIntervalRequired = 500;
-
+            timer1.Interval = intIntervalRequired;
         }
 
         
