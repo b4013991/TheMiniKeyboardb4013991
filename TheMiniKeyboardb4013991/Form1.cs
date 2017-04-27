@@ -666,6 +666,11 @@ namespace TheMiniKeyboardb4013991
             timer1.Enabled = false;
         }
 
+           private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+           {
+               Environment.Exit(0);
+           }
+
 
 
         }
