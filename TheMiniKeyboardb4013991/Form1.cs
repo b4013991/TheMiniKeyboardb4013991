@@ -47,6 +47,7 @@ namespace TheMiniKeyboardb4013991
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Interval = IntervalRequired;
+            timer1.Tick += new EventHandler(timerEnded);
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,15 +67,20 @@ namespace TheMiniKeyboardb4013991
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (Keystrokes == 1)
+            Console.WriteLine(timer1.Interval.ToString())
+                rTxt_WorldBuilder.Clear();
+             if (FirstTime == true)
+            {
+                FirstTime = false;
+                 timer1.Enabled = true;
+                 Keystrokes++;
+            }
+
+            else if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "p";
                 Keystrokes++;
                 timer1.Enabled = true;
-            }
-            else if (timer1.Enabled == false)
-            {
-                Keystrokes = 1;
             }
 
 
@@ -117,7 +123,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 9)
             {
                 rTxt_WorldBuilder.Text = "S";
-                Keystrokes = 1;
+                Keystrokes = 0;
 
             }
         }
@@ -158,7 +164,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "V";
-                Keystrokes = 1;
+                Keystrokes = 0;
             }
         }
 
@@ -208,7 +214,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 9)
             {
                 rTxt_WorldBuilder.Text = "Z";
-                Keystrokes = 1;
+                Keystrokes = 0;
 
             }
         }
@@ -249,7 +255,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "I";
-                Keystrokes = 1;
+                Keystrokes = 0;
 
             }
         }
@@ -290,7 +296,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "L";
-                Keystrokes = 1;
+                Keystrokes = 0;
 
             }
         }
@@ -331,7 +337,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "O";
-                Keystrokes = 1;
+                Keystrokes = 0;
             }
         }
 
@@ -371,7 +377,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = ";";
-                Keystrokes = 1;
+                Keystrokes = 0;
             }
         }
 
@@ -411,7 +417,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "C";
-                Keystrokes = 7;
+                Keystrokes = 0;
 
             }
         }
@@ -452,7 +458,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "F";
-                Keystrokes = 1;
+                Keystrokes = 0;
 
             }
         }
@@ -472,7 +478,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "_";
-                Keystrokes = 1;
+                Keystrokes = 0;
 
             }
         }
@@ -492,9 +498,16 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "_";
-                Keystrokes = 1;
-            }
-
+                Keystrokes = 0;
+            }}
+             private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+        }
+           private void timerEnded(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+        }
 
 
 
