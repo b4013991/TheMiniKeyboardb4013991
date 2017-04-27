@@ -46,39 +46,39 @@ namespace TheMiniKeyboardb4013991
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Interval = IntervalRequired;
+            timer1.Interval = IntervalRequired; // sets the interval of the timer to the default interval set earlier
             timer1.Tick += new EventHandler(timerEnded);
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rTxt_WorldBuilder.Clear();
-            mainTxt.Clear();
+            mainTxt.Clear(); // creates a fresh text box for use - clearing the contents of it
         }
 
         private void button0_Click_1(object sender, EventArgs e)
         {
             WordBuilderTxt = rTxt_WorldBuilder.Text;
-            mainTxt.AppendText(WordBuilderTxt + " ");
+            mainTxt.AppendText(WordBuilderTxt + " "); // adds the text from the rich text box to the main text box
 
             rTxt_WorldBuilder.Clear();
-            Keystrokes = 1;
+            Keystrokes = 0; //resets the keystrokes back to 0
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-             if (FirstTime == true)
+             if (FirstTime == true) //checks if it is the users first time pressing the button
             {
-                FirstTime = false;
+                FirstTime = false; //now the user has pressed the button, first time status is disabled
                  timer1.Enabled = true;
-                 Keystrokes++;
+                 Keystrokes++; // keystrokes integer increased
                  rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
              }
              else if (timer1.Enabled == true)
              {
                  Keystrokes++;
                  rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
-                 timer1.Enabled = false;
+                 timer1.Enabled = false; // timer restarted
                  timer1.Enabled = true;
              }
              else if (timer1.Enabled == false)
