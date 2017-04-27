@@ -15,9 +15,8 @@ namespace TheMiniKeyboardb4013991
     {
 
         string WordBuilderTxt;
-        string Keystrokes = 0;
+        int Keystrokes = 1;
         bool FirstTime = true;
-        int TestNumber = 0;
    
         public Form1()
         {
@@ -66,68 +65,93 @@ namespace TheMiniKeyboardb4013991
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Keystrokes = "1";
-              if (FirstTime == true)
+            if (Keystrokes == 1)
             {
-                FirstTime = false;
-                timer1.Enabled = true;
-                TestNumber++;
-                rTxt_WorldBuilder.Text = Convert.ToString(TestNumber);
+                rTxt_WorldBuilder.Text = "p";
+                Keystrokes++;
             }
-            else if (timer1.Enabled == true)
+            else if (Keystrokes == 2)
             {
-                TestNumber++;
-                rTxt_WorldBuilder.Text = Convert.ToString(TestNumber);
-                timer1.Enabled = false;
-                timer1.Enabled = true;
+                rTxt_WorldBuilder.Text = "q";
+                Keystrokes++;
             }
-              else if (timer1.Enabled == false)
-              {
-                  TestNumber = 0;
-                  TestNumber++;
-                  rTxt_WorldBuilder.Text = Convert.ToString(TestNumber);
-                  timer1.Enabled = true;
-              }
+            else if (Keystrokes == 3)
+            {
+                rTxt_WorldBuilder.Text = "r";
+                Keystrokes++;
+            }
+            else if (Keystrokes == 4)
+            {
+                rTxt_WorldBuilder.Text = "s";
+                Keystrokes++;
+
+            }
+            else if (Keystrokes == 5)
+            {
+                rTxt_WorldBuilder.Text = "1";
+                Keystrokes++;
+            }
+            else if (Keystrokes == 6)
+            {
+                rTxt_WorldBuilder.Text = "P";
+                Keystrokes++;
+            }
+            else if (Keystrokes == 7)
+            {
+                rTxt_WorldBuilder.Text = "Q";
+                Keystrokes++;
+            }
+            else if (Keystrokes == 8)
+            {
+                rTxt_WorldBuilder.Text = "R";
+                Keystrokes++;
+            }
+            else if (Keystrokes == 9)
+            {
+                rTxt_WorldBuilder.Text = "S";
+                Keystrokes = 1;
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Keystrokes = "2";
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Keystrokes = "3";
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Keystrokes = "4";
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Keystrokes = "5";
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Keystrokes = "6";
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Keystrokes = "7";
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Keystrokes = "8";
+
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Keystrokes = "9";
+
         }
 
         
