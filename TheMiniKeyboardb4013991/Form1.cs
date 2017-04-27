@@ -14,10 +14,10 @@ namespace TheMiniKeyboardb4013991
     public partial class Form1 : Form
     {
 
-        string WordBuilderTxt;
-        int Keystrokes = 0;
-        bool FirstTime = true;
-        int IntervalRequired = 500;
+        string WordBuilderTxt; // creates the string where letters from the word builder will be stored
+        int Keystrokes = 0; // sets the keystrokes integer for use with the keypad
+        bool FirstTime = true; // establishes the user is opening the app for the first time
+        int IntervalRequired = 500; // sets the default interval to 500 (0.5s)
 
         public Form1()
         {
@@ -34,7 +34,7 @@ namespace TheMiniKeyboardb4013991
             }
             else
             {
-                txt_ModeStatus.Text = "Multi-Press";
+                txt_ModeStatus.Text = "Multi-Press"; // allows the user to switch between multi-press and prediction mode
             }
 
         }
