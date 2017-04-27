@@ -197,6 +197,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "7\r\n-,\"";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -207,6 +208,7 @@
             this.button8.TabIndex = 10;
             this.button8.Text = "8\r\nA B C";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -217,6 +219,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "9\r\nD E F";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button4
             // 
@@ -227,6 +230,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "4\r\nG H I";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -237,6 +241,7 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "5\r\nJ K L";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -247,6 +252,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "6\r\nM N O";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button1
             // 
@@ -258,6 +264,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "1\r\nP Q R S";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -268,6 +275,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "2\r\nT U V";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -278,6 +286,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "3\r\nW X Y Z";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button000
             // 
@@ -301,6 +310,7 @@
             this.button0.TabIndex = 1;
             this.button0.Text = "000\r\n[ _ ]";
             this.button0.UseVisualStyleBackColor = false;
+            this.button0.Click += new System.EventHandler(this.button0_Click_1);
             // 
             // button00
             // 
