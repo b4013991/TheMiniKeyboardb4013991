@@ -17,7 +17,7 @@ namespace TheMiniKeyboardb4013991
         string WordBuilderTxt;
         int Keystrokes = 1;
         bool FirstTime = true;
-        int IntervalRequired;
+        int IntervalRequired = 500;
 
         public Form1()
         {
@@ -46,7 +46,6 @@ namespace TheMiniKeyboardb4013991
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int IntervalRequired = 500;
             timer1.Interval = IntervalRequired;
         }
 
@@ -70,7 +69,6 @@ namespace TheMiniKeyboardb4013991
             {
                 rTxt_WorldBuilder.Text = "p";
                 Keystrokes++;
-                int IntervalRequired = 500;
                 timer1.Enabled = true;
             }
             else if (timer1.Enabled == false)
@@ -453,7 +451,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "F";
-                Keystrokes = 7;
+                Keystrokes = 1
 
             }
         }
