@@ -165,6 +165,7 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button15.Enabled = false;
             this.button15.Location = new System.Drawing.Point(224, 97);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(52, 31);
@@ -174,6 +175,7 @@
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button14.Enabled = false;
             this.button14.Location = new System.Drawing.Point(224, 134);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(52, 28);
