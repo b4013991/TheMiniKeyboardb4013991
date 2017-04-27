@@ -133,6 +133,7 @@
             // btn_Next
             // 
             this.btn_Next.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Next.Enabled = false;
             this.btn_Next.Location = new System.Drawing.Point(70, 3);
             this.btn_Next.Name = "btn_Next";
             this.btn_Next.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -144,6 +145,7 @@
             // btn_Previous
             // 
             this.btn_Previous.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Previous.Enabled = false;
             this.btn_Previous.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Previous.Location = new System.Drawing.Point(141, 3);
             this.btn_Previous.Name = "btn_Previous";
