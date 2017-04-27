@@ -16,7 +16,8 @@ namespace TheMiniKeyboardb4013991
 
         string WordBuilderTxt;
         int Keystrokes = 1;
-        bool FirstClick = true;
+        bool FirstTime = true;
+        int IntervalRequired;
 
         public Form1()
         {
@@ -40,13 +41,13 @@ namespace TheMiniKeyboardb4013991
 
         private void button13_Click(object sender, EventArgs e)
         {
-            mainTxt.AppendText(Environment.NewLine); // When enter button is pressed, go to a new line in the main text box
+            mainTxt.AppendText(Environment.NewLine);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int intIntervalRequired = 500;
-            timer1.Interval = intIntervalRequired;
+            int IntervalRequired = 500;
+            timer1.Interval = IntervalRequired;
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,7 +70,15 @@ namespace TheMiniKeyboardb4013991
             {
                 rTxt_WorldBuilder.Text = "p";
                 Keystrokes++;
+                int IntervalRequired = 500;
+                timer1.Enabled = true;
             }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+            }
+
+
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "q";
@@ -118,7 +127,6 @@ namespace TheMiniKeyboardb4013991
         {
             if (Keystrokes == 1)
             {
-                timer1.Enabled = true;
                 rTxt_WorldBuilder.Text = "t";
                 Keystrokes++;
             }
@@ -493,5 +501,4 @@ namespace TheMiniKeyboardb4013991
 
         }
     }
-    }
-
+}
