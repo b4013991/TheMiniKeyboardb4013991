@@ -16,7 +16,7 @@ namespace TheMiniKeyboardb4013991
 
         string WordBuilderTxt;
         int Keystrokes = 1;
-        bool FirstTime = true;
+        bool FirstClick = true;
 
         public Form1()
         {
@@ -40,7 +40,7 @@ namespace TheMiniKeyboardb4013991
 
         private void button13_Click(object sender, EventArgs e)
         {
-            mainTxt.AppendText(Environment.NewLine);
+            mainTxt.AppendText(Environment.NewLine); // When enter button is pressed, go to a new line in the main text box
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -118,6 +118,7 @@ namespace TheMiniKeyboardb4013991
         {
             if (Keystrokes == 1)
             {
+                timer1.Enabled = true;
                 rTxt_WorldBuilder.Text = "t";
                 Keystrokes++;
             }
