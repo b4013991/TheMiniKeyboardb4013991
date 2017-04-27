@@ -500,8 +500,8 @@
             // setIntervalToolStripMenuItem
             // 
             this.setIntervalToolStripMenuItem.Name = "setIntervalToolStripMenuItem";
-            this.setIntervalToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.setIntervalToolStripMenuItem.Text = "Interval 500 (0.5s)";
+            this.setIntervalToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.setIntervalToolStripMenuItem.Text = "Default Interval (0.5s)";
             this.setIntervalToolStripMenuItem.Click += new System.EventHandler(this.setIntervalToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem

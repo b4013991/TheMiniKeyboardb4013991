@@ -673,17 +673,28 @@ namespace TheMiniKeyboardb4013991
 
            private void setIntervalToolStripMenuItem_Click(object sender, EventArgs e)
            {
-              IntervalRequired = 500;
+               int interval500;
+               interval500 = 500;
+               timer1.Interval = interval500;
+               MessageBox.Show("The interval has been set to 500, which translates to 0.5 second");
+             
            }
 
            private void interval10001sToolStripMenuItem_Click(object sender, EventArgs e)
            {
-               IntervalRequired = 1000;
+               int interval1000;
+               interval1000 = 1000;
+               timer1.Interval = interval1000;
+               MessageBox.Show("The interval has been set to 1000, which translates to 1 second");
+
            }
 
            private void interval20002sToolStripMenuItem_Click(object sender, EventArgs e)
            {
-               IntervalRequired = 2000;
+               int interval2000;
+               interval2000 = 2000;
+               timer1.Interval = interval2000;
+               MessageBox.Show("The interval has been set to 2000, which translates to 2 seconds");
            }
 
 
