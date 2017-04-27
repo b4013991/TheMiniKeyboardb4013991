@@ -67,12 +67,12 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.setIntervalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setIntervalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interval10001sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interval20002sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_SHU)).BeginInit();
@@ -87,6 +87,7 @@
             this.mainTxt.Location = new System.Drawing.Point(16, 19);
             this.mainTxt.Multiline = true;
             this.mainTxt.Name = "mainTxt";
+            this.mainTxt.ReadOnly = true;
             this.mainTxt.Size = new System.Drawing.Size(279, 123);
             this.mainTxt.TabIndex = 0;
             // 
@@ -434,6 +435,7 @@
             // 
             this.rTxt_WorldBuilder.Location = new System.Drawing.Point(4, 3);
             this.rTxt_WorldBuilder.Name = "rTxt_WorldBuilder";
+            this.rTxt_WorldBuilder.ReadOnly = true;
             this.rTxt_WorldBuilder.Size = new System.Drawing.Size(202, 38);
             this.rTxt_WorldBuilder.TabIndex = 0;
             this.rTxt_WorldBuilder.Text = "";
@@ -465,7 +467,7 @@
             // 
             this.newToolStripMenuItem.BackColor = System.Drawing.Color.DarkTurquoise;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -474,22 +476,30 @@
             this.saveToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Enabled = false;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.saveAsToolStripMenuItem.Text = "Save-As";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Enabled = false;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.openToolStripMenuItem.Text = "Open";
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.BackColor = System.Drawing.Color.OrangeRed;
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // configureToolStripMenuItem
             // 
@@ -508,25 +518,17 @@
             this.setIntervalToolStripMenuItem.Text = "Default Interval (0.5s)";
             this.setIntervalToolStripMenuItem.Click += new System.EventHandler(this.setIntervalToolStripMenuItem_Click);
             // 
-            // quitToolStripMenuItem
-            // 
-            this.quitToolStripMenuItem.BackColor = System.Drawing.Color.OrangeRed;
-            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.quitToolStripMenuItem.Text = "Quit";
-            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
-            // 
             // interval10001sToolStripMenuItem
             // 
             this.interval10001sToolStripMenuItem.Name = "interval10001sToolStripMenuItem";
-            this.interval10001sToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.interval10001sToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.interval10001sToolStripMenuItem.Text = "Interval 1000 (1s)";
             this.interval10001sToolStripMenuItem.Click += new System.EventHandler(this.interval10001sToolStripMenuItem_Click);
             // 
             // interval20002sToolStripMenuItem
             // 
             this.interval20002sToolStripMenuItem.Name = "interval20002sToolStripMenuItem";
-            this.interval20002sToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.interval20002sToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.interval20002sToolStripMenuItem.Text = "Interval 2000 (2s)";
             this.interval20002sToolStripMenuItem.Click += new System.EventHandler(this.interval20002sToolStripMenuItem_Click);
             // 
