@@ -53,6 +53,7 @@ namespace TheMiniKeyboardb4013991
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            int intIntervalRequired = 500;
 
         }
 
