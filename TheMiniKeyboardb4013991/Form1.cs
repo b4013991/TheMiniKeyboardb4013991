@@ -90,9 +90,9 @@ namespace TheMiniKeyboardb4013991
              }
             
 
-            if (Keystrokes == 1)
+            if (Keystrokes == 1) // checks what level the number of keystrokes is at - uses this to designate
             {
-                rTxt_WorldBuilder.Text = "p";
+                rTxt_WorldBuilder.Text = "p"; // designates what letter to use in a linear fashion corresponding to the order shown in the button
             }
             else if (Keystrokes == 2)
             {
@@ -133,7 +133,7 @@ namespace TheMiniKeyboardb4013991
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (FirstTime == true)
+            if (FirstTime == true) //essentially the same process for the entire 12 button keypad
             {
                 FirstTime = false;
                 timer1.Enabled = true;
@@ -668,15 +668,15 @@ namespace TheMiniKeyboardb4013991
 
            private void quitToolStripMenuItem_Click(object sender, EventArgs e)
            {
-               Environment.Exit(0);
+               Environment.Exit(0); // basic quit button
            }
 
            private void setIntervalToolStripMenuItem_Click(object sender, EventArgs e)
            {
-               int interval500;
+               int interval500; // creates a new interval to set the timer to
                interval500 = 500;
                timer1.Interval = interval500;
-               MessageBox.Show("The interval has been set to 500, which translates to 0.5 second");
+               MessageBox.Show("The interval has been set to 500, which translates to 0.5 second"); // displays a message box confirming the timer has changed sucessfully
              
            }
 
