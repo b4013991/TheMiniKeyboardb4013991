@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TheMiniKeyboardb4013991.exe" size="152544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TheMiniKeyboardb4013991.exe" size="150496">
       <assemblyIdentity name="TheMiniKeyboardb4013991" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sQcvF3xIno2Y73J+m3bQz3ROfQOYIngtT9DENIrXRok=</dsig:DigestValue>
+        <dsig:DigestValue>nUTQd5Kp2/AFZ9b0ymegQ2WBGYiuZ0KP8FhaJoy/0aU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
