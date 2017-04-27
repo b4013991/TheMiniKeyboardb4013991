@@ -67,65 +67,74 @@ namespace TheMiniKeyboardb4013991
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Console.WriteLine(timer1.Interval.ToString())
+            Console.WriteLine(timer1.Interval.ToString());
                 rTxt_WorldBuilder.Clear();
              if (FirstTime == true)
             {
                 FirstTime = false;
                  timer1.Enabled = true;
                  Keystrokes++;
-            }
+                 Console.WriteLine("Timer Interval has started at 500");
+                 rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+             }
+             else if (timer1.Enabled == true)
+             {
+                 Keystrokes++;
+                 rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                 timer1.Enabled = false;
+                 timer1.Enabled = true;
+                 Console.WriteLine("The Timer has been restarted");
+             }
+             else if (timer1.Enabled == false)
+             {
+                 Keystrokes = 1;
+                 rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                 timer1.Enabled = true;
+                 Console.WriteLine("Timer interval started again");
 
-            else if (Keystrokes == 1)
+             }
+            
+
+            if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "p";
-                Keystrokes++;
-                timer1.Enabled = true;
             }
 
 
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "q";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "r";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "s";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "1";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "P";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "Q";
-                Keystrokes++;
             }
             else if (Keystrokes == 8)
             {
                 rTxt_WorldBuilder.Text = "R";
-                Keystrokes++;
             }
             else if (Keystrokes == 9)
             {
                 rTxt_WorldBuilder.Text = "S";
-                Keystrokes = 0;
-
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -513,4 +522,4 @@ namespace TheMiniKeyboardb4013991
 
         }
     }
-}
+
