@@ -133,36 +133,51 @@ namespace TheMiniKeyboardb4013991
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "t";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "u";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "v";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "2";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "T";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "U";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -173,46 +188,59 @@ namespace TheMiniKeyboardb4013991
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "w";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "x";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "y";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "z";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "3";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "W";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "X";
-                Keystrokes++;
             }
             else if (Keystrokes == 8)
             {
                 rTxt_WorldBuilder.Text = "Y";
-                Keystrokes++;
             }
             else if (Keystrokes == 9)
             {
@@ -224,36 +252,51 @@ namespace TheMiniKeyboardb4013991
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "g";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "h";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "i";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "4";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "G";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "H";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -265,36 +308,51 @@ namespace TheMiniKeyboardb4013991
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "j";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "k";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "l";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "5";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "J";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "K";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -306,36 +364,50 @@ namespace TheMiniKeyboardb4013991
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "m";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "n";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "o";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "6";
-                Keystrokes++;
-
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "M";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "N";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -346,36 +418,51 @@ namespace TheMiniKeyboardb4013991
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = ".";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "~";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "`";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "7";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "'";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = ":";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -386,36 +473,51 @@ namespace TheMiniKeyboardb4013991
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "a";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "b";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "c";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "8";
-                Keystrokes++;
 
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "A";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "B";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -427,36 +529,50 @@ namespace TheMiniKeyboardb4013991
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "d";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "e";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
                 rTxt_WorldBuilder.Text = "f";
-                Keystrokes++;
             }
             else if (Keystrokes == 4)
             {
                 rTxt_WorldBuilder.Text = "9";
-                Keystrokes++;
-
             }
             else if (Keystrokes == 5)
             {
                 rTxt_WorldBuilder.Text = "D";
-                Keystrokes++;
             }
             else if (Keystrokes == 6)
             {
                 rTxt_WorldBuilder.Text = "E";
-                Keystrokes++;
             }
             else if (Keystrokes == 7)
             {
@@ -468,15 +584,34 @@ namespace TheMiniKeyboardb4013991
 
         private void button000_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "*";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "-";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {
@@ -488,15 +623,34 @@ namespace TheMiniKeyboardb4013991
 
         private void button00_Click(object sender, EventArgs e)
         {
+            if (FirstTime == true)
+            {
+                FirstTime = false;
+                timer1.Enabled = true;
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Keystrokes++;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+            }
+            else if (timer1.Enabled == false)
+            {
+                Keystrokes = 1;
+                rTxt_WorldBuilder.Text = Convert.ToString(Keystrokes);
+                timer1.Enabled = true;
+
+            }
             if (Keystrokes == 1)
             {
                 rTxt_WorldBuilder.Text = "#";
-                Keystrokes++;
             }
             else if (Keystrokes == 2)
             {
                 rTxt_WorldBuilder.Text = "-";
-                Keystrokes++;
             }
             else if (Keystrokes == 3)
             {

@@ -69,6 +69,7 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.setIntervalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_SHU)).BeginInit();
@@ -479,9 +480,17 @@
             // 
             // configureToolStripMenuItem
             // 
+            this.configureToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setIntervalToolStripMenuItem});
             this.configureToolStripMenuItem.Name = "configureToolStripMenuItem";
             this.configureToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.configureToolStripMenuItem.Text = "Configure";
+            // 
+            // setIntervalToolStripMenuItem
+            // 
+            this.setIntervalToolStripMenuItem.Name = "setIntervalToolStripMenuItem";
+            this.setIntervalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.setIntervalToolStripMenuItem.Text = "Set Interval";
             // 
             // Form1
             // 
@@ -557,6 +566,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setIntervalToolStripMenuItem;
     }
 }
 
