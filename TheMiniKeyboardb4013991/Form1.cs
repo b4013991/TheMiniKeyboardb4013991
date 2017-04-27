@@ -61,6 +61,7 @@ namespace TheMiniKeyboardb4013991
             mainTxt.AppendText(WordBuilderTxt + " ");
 
             rTxt_WorldBuilder.Clear();
+            Keystrokes = 1;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -451,7 +452,7 @@ namespace TheMiniKeyboardb4013991
             else if (Keystrokes == 7)
             {
                 rTxt_WorldBuilder.Text = "F";
-                Keystrokes = 1
+                Keystrokes = 1;
 
             }
         }
